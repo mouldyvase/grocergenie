@@ -8,7 +8,7 @@ const axiosFetch = async ({ url, method, data = null }) => {
     const token = sessionStorage.getItem("token") ?? "{}";
     console.log(token);
     const response = await axios.request({
-      url: "http://107.20.36.48:9090/" + url,
+      url: "http://localhost:3000/" + url,
       method,
       data: data,
       headers: {

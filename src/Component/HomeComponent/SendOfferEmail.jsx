@@ -13,7 +13,7 @@ const SendOfferEmail = () => {
     // Perform any validation if needed
 
     // Make a POST request to send the offer email
-    axios.post('http://107.20.36.48:9090/offer/sqs', { message })
+    axios.post('http://localhost:3000/offer/sqs', { message })
       .then(response => {
         // Handle success
         console.log('Email sent successfully:', response.data);

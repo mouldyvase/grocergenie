@@ -24,7 +24,7 @@ export const Cart = () => {
       const fatchCart = async () => {
         // get cart item
         console.log(token);
-        const res = await fetch("http://107.20.36.48:9090/cart/1", {headers: {
+        const res = await fetch("http://localhost:3000/cart/1", {headers: {
             "Content-Type": "application/json",
             "Authorization": "Bearer "+token
           },
@@ -41,7 +41,7 @@ export const Cart = () => {
 
       const applyCoupon = async () => {
         // Make a call to http://107.20.36.48:9090/getDiscount with totalCart Value and coupon code
-        const res = await fetch(`http://107.20.36.48:9090/getDiscount`, {
+        const res = await fetch(`http://localhost:3000/getDiscount`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ export const Cart = () => {
       
 
       const createOrder = async (e) => {
-        const res = await fetch(`http://107.20.36.48:9090/payment/${totalAmount}`, {
+        const res = await fetch(`http://localhost:3000/payment/${totalAmount}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

@@ -1,6 +1,6 @@
 // apiConfig.js
 const API_ENDPOINTS = {
-    backend: 'http://107.20.36.48:9090'
+    backend: 'http://localhost:3000'
     // Add more endpoints as needed
 };
 
