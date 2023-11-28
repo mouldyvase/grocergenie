@@ -1,0 +1,33 @@
+.send-offer-email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Optional: Adjust the height based on your layout */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  send-offer-input {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .send-offer-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .send-offer-button:hover {
+    background-color: #2980b9;
+  }
+  
